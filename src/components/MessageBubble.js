@@ -49,7 +49,7 @@ const MessageBubble = ({ item, onReply, onReact, activeEmojiId, setActiveEmojiId
               </View>
             )}
             <Pressable onLongPress={() => setActiveEmojiId(item.id)} delayLongPress={350}>
-              <Text style={isUser ? styles.textWhite : styles.textBlack}>{item.text}</Text>
+              <Text style={styles.textWhite}>{item.text}</Text>
             </Pressable>
             {item.reaction && (
               <View style={styles.reactionBadge}><Text style={{ fontSize: 12 }}>{item.reaction}</Text></View>
